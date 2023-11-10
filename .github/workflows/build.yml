@@ -45,7 +45,7 @@ jobs:
         libprotobuf-dev
     - name: Prepare macOS
       if: ${{ runner.os == 'macOS' }}
-      run: brew install ninja
+      run: brew install ninja protobuf
     - name: Prepare Windows
       if: ${{ runner.os == 'Windows' }}
       # Install llvm 16 manually, remove after
